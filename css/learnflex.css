@@ -1,0 +1,701 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: textbold;
+}
+a{
+    text-decoration: none;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg{
+    display: none !important
+}
+@font-face{
+    font-family: 'text';
+    src:url('../fontfamily/font5.ttf');
+    font-style: normal;
+    font-weight:bold;
+}
+@font-face{
+    font-family: 'title';
+    src:url('../fontfamily/font1.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'textbold';
+    src:url('../fontfamily/protext.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'bold';
+    src:url('../fontfamily/protextbold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+    /*Page One Start*/
+.page1{
+    background-image: url('../images/portrait1.jpg');
+    position: relative;
+    background-size: cover;
+    height: 697px
+}
+@media(max-width:767px){
+    .page1 {
+        background-image: url('../images/vinland_saga.jpg');
+        
+    }
+}
+/*start header*/
+header{
+    background: #313030;
+    height: 50px;
+    width:100%;
+    display: flex;
+}
+header .container{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+header .logo{
+    height: 50px;
+    width: 30%;
+}
+header .logo h1{
+    margin:14px 0 0px 20px;
+    text-align:left;
+    color: #FFF;
+    font-family: title;
+    font-size: 20px;
+}
+header .logo h1 span{
+    color:#06b13f;
+}
+header .bar{
+    height: 50px;
+    width: 70%;
+    display: flex;
+}
+.bar1 .fas {
+    visibility: hidden;
+}
+.contentbar{
+    display: none;
+}
+.fas {
+    display: none
+}
+.slide{
+    display: none
+}
+@media (max-width:767px){
+    header {
+        z-index: 2;
+        position: fixed
+    }
+    header .logo h1{
+        margin-left: 20px;
+    }
+    .bar1{
+        height: 50px;
+        width: 70%;
+        background: #313030
+    }
+    .bar1 .fas {
+        visibility: visible;
+        color: #FFF;
+        margin: 5px 5px 0 0 ;
+        font-size: 40px;
+        float: right;
+    }
+    .contentbar{
+        display: block;
+    }
+    .nav{
+        text-align: center;
+        z-index: 1;
+        position: fixed;
+        width:0;
+        height: 100%;
+        background:#121212;
+        top:0;
+        left:0;
+        opacity: .9;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: .7s
+    }
+    .slide{
+        font-size: 34px;
+        transition: .7s;
+        z-index: 3;
+        display: block
+    }
+    .nav a{
+        text-decoration: none;
+        color: #FFF;
+        padding: 10px;
+        margin-left: 20px;
+        font-size: 24px;
+        display: block;
+        line-height: 2
+    }
+    .nav a:hover{
+        background: #FFF;
+        color: #000;
+        padding: 10px 20px;
+        transition: .2s
+    }
+    .nav .close{
+        text-align: center;
+        padding: 10px ;
+        width:28px
+    }
+    .nav .close:hover{
+        background: #FFF;
+        color: #000;
+        padding: 10px 25px;
+        border-radius: 50%;
+        transition: .4s
+    }
+    header .bar {
+        display:none;
+    }
+}    
+header .bar ul{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    margin: 15px;
+}
+header .bar ul li a{
+    margin:0 0 0 38px;
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+
+}
+header .bar ul li a:hover {
+    color: #06b13f;
+}
+
+/*End Header*/
+
+/*Start Content*/
+
+.page1 .content{
+    background-color: rgba(0 , 0 , 0 , .5);
+    height: 92.7%;
+    width: 100%;
+    position: absolute;
+        
+}
+.page1 .content .content1{
+    position: relative;
+    width:900px;
+    margin: 0 auto;
+}
+.page1 .content .content1 .intro{
+    position: absolute;
+    width: 470px;
+    margin: 70px 0 0 20px ;
+}
+.page1 .content .content1 h1{
+    font-size: 40px;
+    color: #FFF;
+    letter-spacing: 17px;
+    border-width: 0px 0 2px 0 ;
+    border-style: solid;
+    border-color: #FFF;
+    padding: 15px;
+    margin: 30px 0;
+    font-family: text;
+    display: inline;
+}
+.page1 .content .content1 p span{
+    color: #000;
+    font-family: textbold;
+    text-shadow: 1px 1px 0px #000,
+                 1px 1px 0px #000   ;
+}
+.page1 .content .content1 p{
+    margin: 30px 0;
+    color: #FFF;
+    font-family: text;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    font-size: 20px
+}
+.page1 .content .content1 a{
+    padding: 10px 20px  ;
+    margin: 20px 0;
+    border: 1px solid #06b13f;
+    color: #FFF;
+    font-family: text;
+    letter-spacing: 5px;
+    transition: all .3s ease-in-out;
+    display: inline;
+}
+.page1 .content .content1 a:hover{
+    background: #06b13f;
+    color: #FFF;
+    border: 1px solid #06b13f;
+    display: inline;
+}
+@media(max-width:767px){
+    .page1 .content{
+        text-align: center;
+        height: 100%;
+    }
+    
+}
+/*End Content*/
+    /*Page One End*/
+    /*Page Two Start*/
+.page2{
+    min-height: 600px;
+}
+@media(max-width:767px){
+    .page2 {
+        min-height: 830px
+    }
+    .page2 .content{
+        width: 100%
+    }
+}
+.page2 .content{
+    width:900px;
+    margin: auto;
+}
+
+/*Value  */
+.page2 .content .value{
+    display: flex;
+    position: relative;
+    margin-left: 80px;
+    
+}
+
+@media(min-width:768px) and (max-width:900px){
+    .page2 .content{
+        width: 100%;
+    }
+    .page2 .content .value{
+        display: flex;
+        flex-wrap:wrap;
+        width:90%;
+        text-align: left;
+    }
+    .page2 .content .value .span1{
+        width:40%;
+        text-align: center;
+        margin: -20px 100px ;
+    }
+}
+
+@media(max-width:767px){
+    .page2 .content{
+        width: 100%;
+    }
+    .page2 .content .value{
+        display: block;
+        width:80%;
+        text-align: center
+    }
+    .page2 .content .value span{
+        width:90%;
+    }
+}
+.page2 .content .value span{
+    width: 33%;
+    height: 150px;
+    line-height: 1.5;
+    flex-grow:1;
+    font-family: bold;
+    margin:30px 20px 40px 0 ;
+}
+.page2 .content .value span h2{
+    font-size:28px;
+}
+.page2 .content .value span p {
+    font-size:20px;
+}
+/*About Me*/
+.page2 .content .me{
+    display: flex;
+    margin-top: 20px;
+}
+.page2 .content .me .aboutme{
+    width: 70%;
+    position: relative;
+}
+.page2 .content .me .aboutme span{
+    position: absolute;
+    margin-left: 300px;
+    font-family: bold;
+}
+@media(max-width:767px){
+
+    .page2 .content .me .aboutme{
+        width:60%;
+    }
+    .page2 .content .me .aboutme span{
+        margin-left:10px;
+    }
+    .page2 .content .me .pic {
+        width: 60%;
+        max-height: 270px;
+        background-image: url(../images/me2.jpg);
+        background-size: contain;
+        background-position: bottom left;
+        position: relative;
+        margin: 90px 10px 0 0 ;
+        overflow: visible;
+    }
+}
+@media (min-width:768px) and (max-width:900px){
+    .page2 .content .me .aboutme span{
+        position: absolute;
+        margin-left: 200px;
+        font-family: bold;
+    }
+    .page2 .content .me .aboutme{
+        width:50%;
+    }
+    .page2 .content .me .aboutme span{
+        margin-left:10px;
+    }
+    .page2 .content .me .pic {
+        width: 50%;
+        max-height: 360px;
+        background-image: url(../images/me2.jpg);
+        background-size: contain;
+        background-position: bottom left;
+        position: relative;
+        margin: 90px 10px 0 0 ;
+        overflow: visible;
+    }
+}
+.page2 .content .me .aboutme span h1{
+    font-size: 45px;
+}
+
+.page2 .content .me .aboutme span p{
+    line-height: 1.5;
+    font-size: 24px;
+}
+.page2 .content .me .aboutme span a{
+    font-size: 35px;
+    background: #06b13f;
+    color: #FFF;
+    padding: 10px 30px ;
+    transition: all .4s ease-in-out;
+}
+.page2 .content .me .aboutme span a:hover{
+    background: #FFF;
+    color:#06b13f;
+    outline:  1px solid #06b13f
+}
+
+.page2 .content .me .pic{
+    width:40%;
+    background-image: url('../images/me2.jpg');
+    background-size: cover;
+    height:400px;
+}
+    /*Page Two End*/
+    
+    /*Page3 Start */
+.page3{
+    height: 400px;
+    background: #f2f2f2;
+    font-family: bold;
+    margin-top: 40px;
+    border-top:1px inset #DDD;
+}
+
+/*content3 start*/
+.page3 .content3{
+    width:900px;
+    margin: 10px auto 0;
+    height: 400px;
+    display: flex;
+}
+
+@media(min-width:0px) and (max-width:860px){
+    .page3{
+        height: 800px;
+    }
+    .page3 .content3{
+        display: block;
+        height: 800px;
+    }
+    .page3 .content3 .skill {
+        width: 90%;
+        margin-left: 40px
+    }
+    .page3 .content3 .skills {
+        width: 90%;
+        margin: 0 0 0 -25px;
+    }
+}
+.page3 .content3 .skill{
+    width: 40%;
+    position: relative
+}
+.page3 .content3 .skill span{
+    position: absolute;
+    margin: 20px 0px;
+}
+.page3 .content3 .skill span h1{
+    margin-bottom: 10px;
+}
+.page3 .content3 .skill span p{
+    line-height: 1.5;
+    font-size:20px ;
+}
+
+        /*how much i know in Design*/
+.page3 .content3 .skills {
+    width: 60%;
+    position: relative
+}
+.page3 .content3 .skills .span0{
+    position: absolute;
+    width:80%;
+    margin: 20px 50px;
+}
+.page3 .content3 .skills .span0 h3{
+    font-size: 24px;
+}
+.page3 .content3 .skills .span0 div{
+    background:#FFF;
+    font-size: 26px;
+    margin-bottom: 25px;
+    margin-top: 3px;
+    color: #FFF;
+}
+        /*html*/
+.page3 .content3 .skills .span0 .html{
+    background: #e0e0e0;
+    width: 100%;
+}
+.page3 .content3 .skills .span0 .html span{
+    width: 95%;
+    background: #06b13f;
+    display: flex;
+    justify-content:flex-end;
+}
+.page3 .content3 .skills .span0 .html span h2{
+    font-size: 30px;
+}
+        /*css*/
+.page3 .content3 .skills .span0 .css{
+    background: #e0e0e0;
+    width: 100%;
+}
+.page3 .content3 .skills .span0 .css span{
+    width: 90%;
+    background: #06b13f;
+    display: flex;
+    justify-content:flex-end;
+}
+.page3 .content3 .skills .span0 .css span h2{
+    font-size: 30px;
+}
+        /*js*/
+.page3 .content3 .skills .span0 .js{
+    background: #e0e0e0;
+    width: 100%;
+}
+.page3 .content3 .skills .span0 .js span{
+    width: 70%;
+    background: #06b13f;
+    display: flex;
+    justify-content:flex-end;
+}
+.page3 .content3 .skills .span0 .js span h2{
+    font-size: 30px;
+}
+        /*photoshop*/
+.page3 .content3 .skills .span0 .photoshop{
+    background: #e0e0e0;
+    width: 100%;
+}
+.page3 .content3 .skills .span0 .photoshop span{
+    width: 51%;
+    background: #06b13f;
+    display: flex;
+    justify-content:flex-end;
+}
+.page3 .content3 .skills .span0 .photoshop span h2{
+    font-size: 30px;
+}
+/*content3 Ended*/
+/*content4 started*/
+.page3 .content4{
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    font-family: bold;
+    display: flex;
+}
+.page3 .content4 .pic2{
+    background-image: url(../images/me3.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 40%;
+}
+@media(max-width:767px){
+    .page3 .content4 .pic2{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 25%;
+        margin-top: 100px
+    }
+    .page3 .content4 .education{
+        width: 75%;
+        position: relative;
+        margin-left: -80px;
+        margin-top: 30px;
+    }
+    .page3 .content4 .education span{
+        width:40%;
+        position: absolute;
+    }
+}
+.page3 .content4 .education{
+    width: 60%;
+    height: 400px;
+    position: relative;
+}
+.page3 .content4 .education span{
+    width: 50%;
+    margin: 50px auto 50px 50px;
+    position: absolute
+}
+.page3 .content4 .education span h1{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.page3 .content4 .education span p{
+    line-height: 1.5;
+    font-size: 21px;
+}
+.page3 .content4 .education span a{
+    font-size: 26px;
+    position: absolute;
+    margin-top:20px;
+    color: #FFF;
+    padding: 10px 30px;
+    background: #06b13f;
+    transition: all .4s ease-in-out;
+}
+.page3 .content4 .education span a:hover{
+    background: #FFF;
+    color:#06b13f;
+    outline:  1px solid #06b13f
+}
+/*content4 Ened*/
+    /*Page3 End */
+    
+    /**Page4 Started*/
+.page4{
+    height: 460px;
+    position:relative ;
+    background: #F7F7F7;
+    margin-top: 450px;
+}
+
+.page4 .content5{
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    font-family: bold;
+    display: flex;
+}
+.page4 .content5 .pic4{
+    background-image: url(../images/me6.png);
+    background-size: cover;
+    height: 400px;
+    width: 69%;
+}
+.page4 .content5 .work{
+    width: 60%;
+    height: 400px;
+    position: relative;
+}
+@media(min-width:768px) and (max-width:900px){
+    .page4 .content5 .work {
+        margin-left: 300px;
+        position: absolute;
+    }
+    .page4 .content5 .pic4{
+        width: 50%;
+        height: 350px;
+        opacity: .7
+    }
+}
+@media(max-width:767px){
+    .page4 .content5{
+        display: block;
+    }
+    .page4 .content5 .pic4{
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: .2;
+        width: 100%;
+        height: 400px;
+        position: absolute
+    }
+    .page4 .content5 .work{
+        position:relative;
+        color:#000;
+        width: 50%;
+    }
+    .page4 .content5 .work p{
+        font-family: bold;
+    }
+}
+.page4 .content5 .work span{
+    margin: 30px 0 0 40px;
+    position: absolute;
+}
+.page4 .content5 .work h1{
+    font-size:40px;
+    margin-bottom: 10px
+
+}
+.page4 .content5 .work p{
+    line-height: 1.4;
+    font-size: xx-large;
+    font-family: textbold
+}
+
+.page4 footer{
+    height: 60px;
+    background: #333;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content:center;
+}
+.page4 footer p{
+    position: absolute;
+    margin-top: 12px;
+    font-size: 22px;
+    color: #F7F7F7
+}
+    /*Page4 Ended*/
+    
