@@ -51,7 +51,9 @@ a{
 @media(max-width:767px){
     .page1 {
         background-image: url('../images/vinland_saga.jpg');
-        
+        background-size:cover;
+        width:600px;
+        height:600px;
     }
 }
 /*start header*/
