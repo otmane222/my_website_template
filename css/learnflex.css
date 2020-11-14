@@ -52,8 +52,8 @@ a{
     .page1 {
         background-image: url('../images/vinland_saga.jpg');
         background-size:cover;
-        width:600px;
-        height:600px;
+        width:1067px;
+        height:1000px;
     }
 }
 /*start header*/
@@ -102,13 +102,14 @@ header .bar{
 @media (max-width:767px){
     header {
         z-index: 2;
-        position: fixed
+        position: fixed;
+        hight:150px;
     }
     header .logo h1{
         margin-left: 20px;
     }
     .bar1{
-        height: 50px;
+        hight:150px;
         width: 70%;
         background: #313030
     }
