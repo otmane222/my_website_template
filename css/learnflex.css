@@ -51,7 +51,7 @@ a{
     .page1 {
         background-image: url('../images/vinland_saga.jpg');
         height: 1596px;
-        width:900px;
+        width:905px;
         background-size: cover;
     }
 }
@@ -255,7 +255,7 @@ header .bar ul li a:hover {
 }
 @media(max-width:425px){
     .page1 .content{
-        width:800px;
+        width:790px;
         background:none;
         flex-wrap:wrap;
         height:900px;
@@ -295,10 +295,10 @@ header .bar ul li a:hover {
 }  
 @media (max-width:425px){
     .page2{
-        width:900px;
+        width:905px;
     }
     .page2 .content2{
-        width:900px;
+        width:905px;
         position:relative;
         background:rgba(204, 230, 100, .28);
     }
@@ -418,15 +418,15 @@ header .bar ul li a:hover {
 }
 .page2 .content2 .me .aboutme span a{
     font-size: 35px;
-    background: #06b13f;
+    background: #f50;
     color: #FFF;
     padding: 10px 30px ;
     transition: all .4s ease-in-out;
 }
 .page2 .content2 .me .aboutme span a:hover{
     background: #FFF;
-    color:#06b13f;
-    outline:  1px solid #06b13f
+    color:#f50;
+    outline:  1px solid #f50
 }
 
 .page2 .content2 .me .pic{
@@ -457,16 +457,16 @@ header .bar ul li a:hover {
 @media(max-width:452px){
     .page3{
         background:none;
-        height: 1900px;
-        width:900px;
+        height: 1950px;
+        width:905px;
     }
     .page3 .content3{
         background:#f4f4f3;
         display: block;
-        height: 1450px;
+        height: 1550px;
     }
     .page3 .content3 .skill {
-        height:300px !important;
+        height:450px !important;
         width: 100% !important;
     }
     .page3 .content3 .skill span{
@@ -478,7 +478,7 @@ header .bar ul li a:hover {
         font-size:60px;
     }
     .page3 .content3 .skill span p{
-        font-size:38px !important;
+        font-size:46px !important;
     }
     
     .page3 .content3 .skills {
@@ -497,7 +497,7 @@ header .bar ul li a:hover {
         margin: 20px 50px;
     }
     .page3 .content3 .skills .span0 h3{
-        font-size: 54px !important;
+        font-size: 60px !important;
     }
     .page3 .content3 .skills .span0 div{
         background:none;
@@ -782,7 +782,7 @@ header .bar ul li a:hover {
 }
 @media(max-width:425px){
     .page4{
-        width:900px;
+        width:902px;
         height:600px;
         background:#000;
     }
@@ -794,7 +794,7 @@ header .bar ul li a:hover {
         background-repeat: no-repeat;
         opacity: .2;
         width: 100%;
-        height: 720px;
+        height: 725px;
         position: absolute
     }
     .page4 .content5 .work{
@@ -810,7 +810,7 @@ header .bar ul li a:hover {
         font-size:50px !important;
     }
     .page4 footer{
-        height:100px !important; 
+        height:125px !important; 
         opacity:.7;
     }
     .page4 footer p{
@@ -833,13 +833,27 @@ header .bar ul li a:hover {
     font-size: xx-large;
     font-family: textbold
 }
-
+.page4 .content5 .work .lastcontact{
+    margin-top: 20px;
+}
+.page4 .content5 .work p a{
+    padding: 10px;
+    background: #06b13f;
+    color: #f7f6f6;
+    transition:all .6s ease-in-out;
+}
+.page4 .content5 .work p a:hover{
+    background:none;
+    outline:2px solid #06b13f;
+    color:#06b13f;
+}
 .page4 footer{
     height: 60px;
     background: #333;
     text-align: center;
     position: relative;
     display: flex;
+    align-items:center;
     justify-content:center;
 }
 .page4 footer p{
