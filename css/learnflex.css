@@ -51,7 +51,7 @@ a{
     .page1 {
         background-image: url('../images/vinland_saga.jpg');
         height: 1596px;
-        width:905px;
+        width:905px !important;
         background-size: cover;
     }
 }
@@ -173,6 +173,91 @@ header .bar{
         display:none;
     }
 }    
+
+@media (max-width:768px){
+    .page1{
+        width:768px;
+    }
+    header {
+        height:110px;
+        width:100% !important;
+    }
+    header .logo {
+        z-index: 1;
+    }
+    header .logo h1{
+        margin:30px 20px 0px 40px ;
+        font-size:40px;   
+    }
+    header .container{
+        width:100%;
+    }
+    .bar1{
+        height: 50px;
+        width: 70%;
+    }
+    .bar1 .fas {
+        visibility: visible;
+        color: #000;
+        margin: 25px 25px 0 0 ;
+        font-size: 70px;
+        float: right;
+    }
+    .contentbar{
+        display: block;
+    }
+    .nav{
+        text-align: center;
+        z-index: 1;
+        position: fixed;
+        width:0;
+        height: 100%;
+        top:0;
+        left:0px;
+        opacity: .9;
+        overflow-x: hidden;
+        padding-top: 60px;
+        background:#121212;
+        transition: .7s
+    }
+    .slide{
+        font-size: 34px;
+        transition: .7s;
+        z-index: 3;
+        display: block
+    }
+    .nav a{
+        text-decoration: none;
+        color: #FFF;
+        padding: 10px;
+        margin-left: 20px;
+        font-size: 40px;
+        display: block;
+        line-height: 2
+    }
+    .nav a:hover{
+        background: #FFF;
+        color: #000;
+        padding: 10px 20px;
+        transition: .2s
+    }
+    .nav .close{
+        text-align: center;
+        padding: 70px ;
+        width:28px
+    }
+    .nav .close:hover{
+        background: #FFF;
+        color: #000;
+        padding: 10px 25px;
+        border-radius: 50%;
+        transition: .4s
+    }
+    header .bar {
+        display:none;
+    }
+}    
+
 header .bar ul{
     list-style: none;
     display: flex;
@@ -252,6 +337,28 @@ header .bar ul li a:hover {
     color: #FFF;
     border: 1px solid #06b13f;
     display: inline;
+}
+@media(max-width:768px){
+    .page1{
+        width:900px !important;
+    }
+    .page1 .content {
+        width:60%;
+        height:400px;
+        margin:20px 0 0 20px;
+    }
+    .page1 .content .content1{
+        width:570px;
+    }
+    .page1 .content .content1 h1{
+        font-size:63px
+    }
+    .page1 .content .content1 p{
+        font-size:30px
+    }
+    .page1 .content .content1 h4 a{
+        font-size:33px;
+    }
 }
 @media(max-width:425px){
     .page1 .content{
@@ -457,13 +564,13 @@ header .bar ul li a:hover {
 @media(max-width:452px){
     .page3{
         background:none;
-        height: 1950px;
+        height: 1900px;
         width:905px;
     }
     .page3 .content3{
         background:#f4f4f3;
         display: block;
-        height: 1550px;
+        height: 1600px;
     }
     .page3 .content3 .skill {
         height:450px !important;
@@ -774,7 +881,7 @@ header .bar ul li a:hover {
         margin-left: 300px;
         position: absolute;
     }
-    .page4 .content5 .pic4{
+   767age4 .content5 .pic4{
         width: 50%;
         height: 350px;
         opacity: .7
@@ -845,7 +952,7 @@ header .bar ul li a:hover {
 .page4 .content5 .work p a:hover{
     background:none;
     outline:2px solid #06b13f;
-    color:#06b13f;
+    color:#06b13f; 
 }
 .page4 footer{
     height: 60px;
@@ -858,8 +965,218 @@ header .bar ul li a:hover {
 }
 .page4 footer p{
     position: absolute;
-    margin-top: 12px;
+    margin-top: 0px;
     font-size: 22px;
     color: #F7F7F7
 }
     /*Page4 Ended*/
+@media (min-width:426px) and (max-width:768px){
+    .page2{
+        height:1260px;
+        width:900px !important;
+    }
+
+    .page2 .content2{
+        height:1260px;
+        margin-top:-38px
+    }
+    .page2 .content2 .value {
+        margin:0;
+        text-align:center;
+        height:760px !important;
+        display:block !important;
+        background:rgb(155 ,231 ,234,.37);
+     }
+    .page2 .content2 .value span h2{
+        font-size:70px !important;
+    } 
+    .page2 .content2 .value span p{
+        font-size:40px !important;
+    } 
+    .page2 .content2 .me {
+        margin-top:30px !important;
+    }
+    .page2 .content2 .me .aboutme span{
+        margin:0px 0 0 40px !important;
+        width:90%
+    }
+    .page2 .content2 .me .aboutme span h1{
+        font-size:65px !important;
+        margin-bottom:20px;
+    }
+    .page2 .content2 .me .aboutme span p{
+        font-size:35px !important;
+    }
+    .page2 .content2 .me .pic{
+        margin:-10px 0px 0px -180px;
+    }  
+    .page3{
+        background:none;
+        height: 1900px;
+        width:905px;
+    }
+    .page3 .content3{
+        background:#f4f4f3;
+        display: block;
+        height: 1500px;
+    }
+    .page3 .content3 .skill {
+        height:450px !important;
+        width: 100% !important;
+    }
+    .page3 .content3 .skill span{
+        text-align:center;
+        width:80%;
+        margin-left:10% !important;
+    }
+    .page3 .content3 .skill span h1{
+        font-size:60px;
+    }
+    .page3 .content3 .skill span p{
+        font-size:42px !important;
+    }
+    
+    .page3 .content3 .skills {
+        width: 90%;
+        margin:10px 0 0px 0;
+    }
+
+            /*how much i know in Design*/
+    .page3 .content3 .skills {
+        width: 100% !important;
+        position: relative
+    }
+    .page3 .content3 .skills .span0{
+        position: absolute;
+        width:80% !important;
+        margin: 20px 10%;
+    }
+    .page3 .content3 .skills .span0 h3{
+        font-size: 50px !important;
+
+    }
+    .page3 .content3 .skills .span0 div{
+        background:none;
+        height:60px;
+        margin-bottom: 85px !important;
+        margin-top: 0px;
+        color: #fff;
+    }
+    .page3 .content3 .skills .span0 div:nth-child(2){
+        margin-top:-10px !important;
+    }
+    .page3 .content3 .skills .span0 div:nth-child(4){
+        margin-top:-25px !important;
+    }
+    .page3 .content3 .skills .span0 div:nth-child(6){
+        margin-top:-30px !important;
+    }
+    .page3 .content3 .skills .span0 div:nth-child(8){
+        margin-top:-60px !important;
+    }
+            /*html*/
+    .page3 .content3 .skills .span0 .html{
+        background: #e0e0e0;
+        width: 100%;
+    }
+    .page3 .content3 .skills .span0 .html span{
+        width: 95%;
+        height:60px;
+        background: #06b13f;
+        display: flex;
+        justify-content:flex-end;
+    }
+    .page3 .content3 .skills .span0 .html span h2{
+        font-size: 54px !important;
+    }
+            /*css*/
+    .page3 .content3 .skills .span0 .css{
+        background: #e0e0e0;
+        width: 100%;
+    }
+    .page3 .content3 .skills .span0 .css span{
+        width: 90%;
+        height:60px;
+        background: #06b13f;
+        display: flex;
+        justify-content:flex-end;
+    }
+    .page3 .content3 .skills .span0 .css span h2{
+        font-size: 54px !important;
+    }
+            /*js*/
+    .page3 .content3 .skills .span0 .js{
+        background: #e0e0e0;
+        width: 100%;
+    }
+    .page3 .content3 .skills .span0 .js span{
+        width: 70%;
+        background: #06b13f;
+        display: flex;
+        height:60px;
+        justify-content:flex-end;
+    }
+    .page3 .content3 .skills .span0 .js span h2{
+        font-size: 54px !important;
+    }
+            /*photoshop*/
+    .page3 .content3 .skills .span0 .photoshop{
+        background: #e0e0e0;
+        width: 100%;
+    }
+    .page3 .content3 .skills .span0 .photoshop span{
+        width: 51%;
+        background: #06b13f;
+        height:60px;
+        display: flex;
+        justify-content:flex-end;
+    }
+    .page3 .content3 .skills .span0 .photoshop span h2{
+        font-size: 54px !important;
+    }
+    .page3 .content4 .pic3{
+        width:45% !important;
+        margin-top:129px;
+        height:500px !important;
+    }
+    .page3 .content4 .education{
+        width:50% !important;
+    }
+    .page3 .content4 .education span{
+        width:90% !important;        
+    }
+    .page3 .content4 .education span h1{
+        font-size:60px;
+    }
+    .page3 .content4 .education span p{
+        font-size:40px;
+    }
+    .page3 .content4 .education span a{
+        font-size:40px;
+    }
+    .page4{
+        height:500px;
+        width:905px;
+    }
+    .page4 .content5{
+        height:500px;
+        width:100%;
+        margin:0;
+    }
+    .page4 .content5 .work span{
+        width:107% !important;
+        margin-left:-7%;
+    }
+    .page4 .content5 h1{
+        font-size:60px !important;
+    }
+    .page4 .content5 p {
+        font-family:bold !important ;
+        font-size:40px !important;
+    }
+    footer p{
+        font-size:30px !important;         
+    }  
+    
+    
+}
