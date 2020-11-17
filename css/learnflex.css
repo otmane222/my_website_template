@@ -174,7 +174,7 @@ header .bar{
     }
 }    
 
-@media (max-width:768px){
+@media (max-width:767px){
     .page1{
         width:768px;
     }
@@ -338,7 +338,7 @@ header .bar ul li a:hover {
     border: 1px solid #06b13f;
     display: inline;
 }
-@media(max-width:768px){
+@media(max-width:767px){
     .page1{
         width:900px !important;
     }
@@ -561,7 +561,7 @@ header .bar ul li a:hover {
     display: flex;
 }
 /*Start media .Page3 .skills */
-@media(max-width:452px){
+@media(max-width:425px){
     .page3{
         background:none;
         height: 1900px;
@@ -970,7 +970,7 @@ header .bar ul li a:hover {
     color: #F7F7F7
 }
     /*Page4 Ended*/
-@media (min-width:426px) and (max-width:768px){
+@media (min-width:426px) and (max-width:767px){
     .page2{
         height:1260px;
         width:900px !important;
@@ -1180,3 +1180,4 @@ header .bar ul li a:hover {
     
     
 }
+/*The End Emailto:otmaneaboulghit@gmail.com*/
