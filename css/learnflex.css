@@ -881,7 +881,7 @@ header .bar ul li a:hover {
         margin-left: 300px;
         position: absolute;
     }
-   767age4 .content5 .pic4{
+    .page4 .content5 .pic4{
         width: 50%;
         height: 350px;
         opacity: .7
@@ -985,7 +985,7 @@ header .bar ul li a:hover {
         text-align:center;
         height:760px !important;
         display:block !important;
-        background:rgb(155 ,231 ,234,.37);
+        background:#a9a9ae;
      }
     .page2 .content2 .value span h2{
         font-size:70px !important;
