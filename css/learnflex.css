@@ -1272,23 +1272,37 @@ header .bar ul li a:hover {
         color:#1ade56;
     }
 /*Start Meadia 900+*/
-@media (min-width:901px){
+@media (min-width:901px) and (max-width:1024px){
+    .page1{
+        width:1024px
+    }
+
     .page1 header{
-        height:90px !important;
-        background:rgba(0 ,0 ,0 , .5) !important;
+        height:90px;
+        background:rgba(0 ,0 ,0 , .5);
     }
     .page1 header ul li a{
-        font-size:28px !important;
+        font-size:28px;
     }
     .page1 header .logo h1{
-        font-size:30px !important; 
+        font-size:30px;
     }
     .page1 .content {
-        height:608px !important;
-        width:100% !important;
-        margin-top:-.5px !important;
+        height:608px;
+        width:1024px;
+        margin-top:-.5px;
     }
     .page1 .content .content1{
-        margin:100px !important; 
+        margin:100px;
     }
-}/*The End Emailto:otmaneaboulghit@gmail.com*/
+    .page2{
+        width:1024px
+    }
+    .page3{
+        width:1024px
+    }
+    .page4{
+        width:1024px
+    }
+}
+/*The End Emailto:otmaneaboulghit@gmail.com*/
