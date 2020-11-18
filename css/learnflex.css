@@ -174,7 +174,7 @@ header .bar{
     }
 }    
 
-@media (max-width:767px){
+@media (max-width:768px){
     .page1{
         width:768px;
     }
@@ -279,7 +279,40 @@ header .bar ul li a:hover {
 /*End Header*/
 
 /*Start Content*/
+@media(min-width:769px) and (max-width:900px){
+    .page1{
+    background-color: rgba(0 , 0 , 0 , .5) !important;
+    height:650px !important;   
+    width:1010px !important;     
+    }
+    .page1 header{
+        background-color: rgba(0 , 0 , 0 , .5) !important;
+        height:150px;
 
+    }
+    .page1 .content{
+        height:500px !important;
+        width:1010px !important;
+        margin-top:-0.5px;
+    }
+    .page1 header ul li a{
+        font-size:28px !important;
+    }
+    .page1 header ul li {
+        margin:10px 0 0 5px !important;
+    }
+    .page1 header .logo h1{
+        font-size:29px !important;
+        margin:23px 0px 0px 30px
+    }
+    .page1 .content p {
+        font-size:25px !important;
+    }
+    .page1 .content a{
+        font-size:28px !important;
+        background:rgba(6 ,173, 59 , .42);
+    }
+}
 .page1 .content{
     background-color: rgba(0 , 0 , 0 , .5);
     height: 92.7%;
@@ -338,7 +371,7 @@ header .bar ul li a:hover {
     border: 1px solid #06b13f;
     display: inline;
 }
-@media(max-width:767px){
+@media(max-width:768px){
     .page1{
         width:900px !important;
     }
@@ -492,29 +525,6 @@ header .bar ul li a:hover {
     margin-left: 300px;
     font-family: bold;
 }
-@media (min-width:768px) and (max-width:900px){
-    .page2 .content2 .me .aboutme span{
-        position: absolute;
-        margin-left: 200px;
-        font-family: bold;
-    }
-    .page2 .content2 .me .aboutme{
-        width:50%;
-    }
-    .page2 .content2 .me .aboutme span{
-        margin-left:10px;
-    }
-    .page2 .content2 .me .pic {
-        width: 50%;
-        max-height: 360px;
-        background-image: url(../images/me2.jpg);
-        background-size: contain;
-        background-position: bottom left;
-        position: relative;
-        margin: 90px 10px 0 0 ;
-        overflow: visible;
-    }
-}
 .page2 .content2 .me .aboutme span h1{
     font-size: 45px;
 }
@@ -561,7 +571,7 @@ header .bar ul li a:hover {
     display: flex;
 }
 /*Start media .Page3 .skills */
-@media(max-width:425px){
+@media(max-width:452px){
     .page3{
         background:none;
         height: 1900px;
@@ -876,7 +886,7 @@ header .bar ul li a:hover {
     height: 400px;
     position: relative;
 }
-@media(min-width:768px) and (max-width:900px){
+@media(min-width:769px) and (max-width:900px){
     .page4 .content5 .work {
         margin-left: 300px;
         position: absolute;
@@ -970,7 +980,7 @@ header .bar ul li a:hover {
     color: #F7F7F7
 }
     /*Page4 Ended*/
-@media (min-width:426px) and (max-width:767px){
+@media (min-width:426px) and (max-width:768px){
     .page2{
         height:1260px;
         width:900px !important;
@@ -1177,7 +1187,88 @@ header .bar ul li a:hover {
     footer p{
         font-size:30px !important;         
     }  
-    
-    
+       
+}
+
+/*media 767 --> 900*/
+@media(min-width:769px) and (max-width:900px){
+    .page3{
+        width:1010px;
+        height:640px;
+        background:none;
+    }
+    .page3 .content3{
+        width:100%;
+        background:#f2f2f2;
+        height:500px !important;
+    }
+    .page3 .content3 {
+        margin-top:0px
+    }
+    .page3 .content3 .skill span{
+        margin-left:5% !important;
+        width:100%;
+    }
+    .page3 .content3 .skill span h1{
+        font-size:46px;
+    }
+    .page3 .content3 .skill span p{
+        font-size:26px;
+    }
+    .page3 .content3 .skills .span0{
+        margin:8% 0% 0% 10%;
+    }
+    .page3 .content3 .skills .span0 h2{
+        font-size:30px !important;
+    }
+    .page3 .content3 .skills .span0 h3{
+        font-size:30px !important;
+    }
+    .page3 .content4 {
+        height:550px;
+    }
+    .page3 .content4 .pic3{
+        height:500px;
+        width:44%;
+    }
+    .page3 .content4 .education{
+        width:50%;
+        margin:0px 0px 0px -50px;
+    }
+    .page3 .content4 .education span{
+        width:100%;
+    }
+    .page3 .content4 .education span h1{
+        font-size:55px !important;
+    }
+    .page3 .content4 .education span p{
+        font-size:35px;
+    }
+    .page3 .content4 .education span a{
+        font-size:35px;
+        background:none;
+        color:#1ade56;
+    }
+    .page4 {
+        width:1010px;
+    }
+    .page4 .content5{
+        width:100%;
+        height:400px !important;
+        margin:0px;
+    }
+    .page4 .content5 .pic4{
+        height:400px;
+        width:53%;
+    }
+    .page4 .content5 .work{
+        margin-left:46%;
+        width:53%;
+    }
+}
+
+.page3 .content4 .education span a{
+    background:none;
+    color:#1ade56;
 }
 /*The End Emailto:otmaneaboulghit@gmail.com*/
