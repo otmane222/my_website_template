@@ -1305,4 +1305,33 @@ header .bar ul li a:hover {
         width:1024px
     }
 }
+
+@media(min-width:1025px){
+
+
+    .page1 header{
+        height:90px;
+        background:rgba(0 ,0 ,0 , .5);
+    }
+    .page1 header ul li a{
+        font-size:28px;
+        margin:20px 0 0 30px;
+    }
+    .page1 header ul li {
+        font-size:28px;
+        margin:10px 0 0 15px;
+    }
+    .page1 header .logo h1{
+        font-size:30px;
+        margin:25px 0 0 50px;
+    }
+    .page1 .content {
+        height:608px;
+        width: 100%;
+        margin-top:-.5px;
+    }
+    .page1 .content .content1{
+        margin:100px;
+    }
+}
 /*The End Emailto:otmaneaboulghit@gmail.com*/
